@@ -38,9 +38,9 @@ int main(){
 }
 
 void input(int *a ,int *b){
-    printf("Enter the first number: ");
+    printf("Enter the first number: \n");
     scanf("%d", a);
-    printf("Enter the second number: ");
+    printf("Enter the second number: \n");
     scanf("%d", b);
    }
 

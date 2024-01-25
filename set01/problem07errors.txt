@@ -1,0 +1,4 @@
+ PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gcc problem07.c
+C:\Users\MYHP~1\AppData\Local\Temp\ccEn5Jh4.o:problem07.c:(.text+0xf): undefined reference to `input_n'
+collect2.exe: error: ld returned 1 exit status
+
