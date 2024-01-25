@@ -1,0 +1,24 @@
+1.what is hash-#? 
+ans. A symbol used to include the library/header file.
+correct ans. hash indicates the lines that should be processed by the pre-processor.
+
+2.what is a pre-processor?
+ans. 
+
+3.what is GCC?
+ans. GCC is a C language compiler that converts the c source files to executable (mahine code).
+
+4.what does processor do ?
+preprocessor of gcc will process the lines starting with hash .
+
+4. what does processing a line starting with hash mean?
+ Process - input= c source file
+         - output = c source file
+
+  include - pre-processor directive 
+  <stdio.h> - header file   
+   
+
+
+
+

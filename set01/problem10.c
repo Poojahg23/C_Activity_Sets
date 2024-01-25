@@ -25,7 +25,6 @@ world is greater than hello
 
 ---*/
 
-
 #include <stdio.h>
 #include <string.h>
 
