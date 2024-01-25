@@ -1,23 +1,44 @@
-1.what is hash-#? 
-ans. A symbol used to include the library/header file.
-correct ans. hash indicates the lines that should be processed by the pre-processor.
+what is # 
+- indicates the lines to be processed by the pre-processor.
 
-2.what is a pre-processor?
-ans. 
+what is pre-processor
+-the first part of the compiler which process the lines starting with a hash .
 
-3.what is GCC?
-ans. GCC is a C language compiler that converts the c source files to executable (mahine code).
+what is a compiler?
+-it converts the c source codes into executable.
 
-4.what does processor do ?
-preprocessor of gcc will process the lines starting with hash .
+what is a pre-processor directive? 
+"include" is a pre-processor directive. it directs the pre-processoor to include the header file.
 
-4. what does processing a line starting with hash mean?
- Process - input= c source file
-         - output = c source file
+what is stdio.h ?
+a header library which contains in built function prototypes.
+is header file containing function prototypes.
 
-  include - pre-processor directive 
-  <stdio.h> - header file   
-   
+what is a function prototype?
+consists of return type , function name, list of arguments.
+
+what is the use of function prototype?
+is used to check if the correct number and type of actual arguments is being passed and if th ereturn type is correct.
+
+what is the effect of #include<stdio.h>?
+
+
+what is main?
+a  starting function.
+
+what is prinf?
+a std library function.
+use to print a string on the consol terminal screen std.out
+
+what is back slash- \n in format string?
+- escape sequence ; moves cursor to the new line in console terminal screen std.out.
+
+what does return statement do ?
+transfers control from called function to the calling function and optionally returns a value.
+
+
+
+
 
 
 
