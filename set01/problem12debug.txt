@@ -1,0 +1,75 @@
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gcc -g -O0 problem12.c
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40163d: file problem12.c, line 79.
+(gdb) r
+Starting program: C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/a.exe 
+[New Thread 14628.0x1bf0]
+[New Thread 14628.0x3aa4]
+
+Breakpoint 1, 0x0040163d in main () at problem12.c:79
+warning: Source file is more recent than executable.
+79          Complex result;
+(gdb) n
+80          result.real = a.real + b.real;
+(gdb) n
+Enter the number of complex numbers:
+3
+81          result.imaginary = a.imaginary + b.imaginary;
+(gdb) n
+82          return result;
+(gdb) n
+Enter the complex numbers:
+Enter real part:
+2
+Enter imaginary part:
+3
+Enter real part:
+4
+Enter imaginary part:
+5
+Enter real part: 
+6
+Enter imaginary part:
+7
+83      }
+(gdb) n
+84
+(gdb) n
+Complex Numbers:
+2.00 + 3.00i
+4.00 + 5.00i
+6.00 + 7.00i
+Sum of Complex Numbers: 12.00 + 15.00i
+85      Complex add_n_complex(int n, Complex c[n]) {
+(gdb) n
+86          Complex result = {0.0, 0.0};
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128f in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 14628] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5

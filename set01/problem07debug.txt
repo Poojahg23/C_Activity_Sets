@@ -1,0 +1,38 @@
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gcc -g -O0 problem07.c
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem07.c, line 10.
+(gdb) r
+Starting program: C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/a.exe 
+[New Thread 5192.0x42a0]
+[New Thread 5192.0x2424]
+
+Breakpoint 1, main () at problem07.c:10
+10          n=input_n();
+(gdb) n
+Enter a natural number n :
+4
+11          sum=sum_n_nos(n);
+(gdb)
+12          output(n,sum);
+(gdb) n
+The sum upto 4 is 10.
+13          return 0;
+(gdb) n
+14      }
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 5192] will be killed.
+
+Quit anyway? (y or n) y

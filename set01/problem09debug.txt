@@ -1,0 +1,128 @@
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gcc -g -O0 problem07.c
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem07.c, line 10.
+(gdb) r
+Starting program: C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/a.exe 
+[New Thread 5192.0x42a0]
+[New Thread 5192.0x2424]
+
+Breakpoint 1, main () at problem07.c:10
+10          n=input_n();
+(gdb) n
+Enter a natural number n :
+4
+11          sum=sum_n_nos(n);
+(gdb)
+12          output(n,sum);
+(gdb) n
+The sum upto 4 is 10.
+13          return 0;
+(gdb) n
+14      }
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 5192] will be killed.
+
+Quit anyway? (y or n) y
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gcc -g -O0 problem08.c 
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401477: file problem08.c, line 27.
+(gdb) r
+Starting program: C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/a.exe 
+[New Thread 8568.0x5308]
+[New Thread 8568.0x5b0]
+
+Breakpoint 1, 0x00401477 in main () at problem08.c:27
+27      int main(){
+(gdb) n
+29          n=input_array_size();
+(gdb) n
+enter the size of array:
+3
+30          int a[n];
+(gdb)
+31          input_array(n,a);
+(gdb)
+enter the array:
+1 7 11
+33          sum=sum_n_array(n,a);
+(gdb)
+34          output(n,a,sum);
+(gdb)
+the sum is 19:
+35          return 0;
+(gdb)
+36      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 8568] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gcc -g -O0 problem09.c 
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem09.c, line 32.
+(gdb) r
+Starting program: C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/a.exe 
+[New Thread 25248.0xbc0]
+[New Thread 25248.0x1ea8]
+
+Breakpoint 1, main () at problem09.c:32
+32          n = input();
+(gdb)
+(gdb) n
+Enter a number:
+50
+33          sqrroot = square_root(n);
+(gdb) n
+34          output(n,sqrroot);
+(gdb) n
+The square root of 50 is 7.35       return 0;
+(gdb) n
+36      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 25248] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
