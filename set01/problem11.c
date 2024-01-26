@@ -9,6 +9,19 @@ typedef struct _complex Complex;
 Complex input_complex();
 Complex add_complex(Complex a, Complex b);
 void output(Complex a, Complex b, Complex sum);
+```
+
+***Input***
+```
+2 3
+4 5
+```
+
+***Output***
+```
+The sum of 2+3i and 4+5i is 6+8i
+```
+---
 
 */
 
@@ -49,5 +62,5 @@ Complex add_complex(Complex a, Complex b){
 }
 
 void output(Complex a, Complex b, Complex sum){
-    printf("the sum of %1.f+%1.fi and %1.f+%1.fi is %1.f+%1.f1\n", a.real,b.real,a.imaginary,b.imaginary,sum.real,sum.imaginary);
+    printf("The sum of %1.f+%1.fi and %1.f+%1.fi is %1.f+%1.fi.\n", a.real,b.real,a.imaginary,b.imaginary,sum.real,sum.imaginary);
 }

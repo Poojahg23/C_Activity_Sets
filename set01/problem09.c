@@ -38,7 +38,7 @@ int main()
 float input()
 {
     int n;
-    printf("Enter a number : \n");
+    printf("Enter a number: \n");
     scanf("%d", &n);
     return n;
 }
@@ -57,5 +57,5 @@ float square_root(float n)
 
 void output(float n, float sqrroot)
 {
-    printf("The square root of %.0f is %.0f", n,sqrroot);
+    printf("The square root of %.0f is %.0f.", n,sqrroot);
 }

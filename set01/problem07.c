@@ -29,5 +29,5 @@ int sum_n_nos(int n){
 }
 
 void output(int n,int sum){
-    printf("The sum upto %d is %d\n", n, sum);
+    printf("The sum upto %d is %d.\n", n, sum);
 }

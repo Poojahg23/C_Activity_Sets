@@ -1,7 +1,7 @@
-what is # 
+what is # ?
 - indicates the lines to be processed by the pre-processor.
 
-what is pre-processor
+what is pre-processor?
 -the first part of the compiler which process the lines starting with a hash .
 
 what is a compiler?
