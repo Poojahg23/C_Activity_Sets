@@ -83,18 +83,22 @@ Complex add(Complex a, Complex b) {
 }
 
 Complex add_n_complex(int n, Complex c[n]) {
-    Complex result = {0.0, 0.0};
-    for (int i = 0; i < n; i++) {
-        result = add(result, c[i]);
-    }
+   Complex result;
+   result.real = 0.0;
+   result.imaginary = 0.0;
+    for (int i = 0; i < n; i++) 
+{
+    result = add(result, c[i]);
     return result;
 }
 
-void output(int n, Complex c[n], Complex result) {
+void output(int n, Complex c[n], Complex result) 
+{
     printf("Complex Numbers:\n");
     for (int i = 0; i < n; i++) {
         printf("%.2f + %.2fi\n", c[i].real, c[i].imaginary);
     }
     printf("Sum of Complex Numbers: %.2f + %.2fi\n", result.real, result.imaginary);
 }
+
 

@@ -26,7 +26,6 @@ world is greater than hello
 ---*/
 
 #include <stdio.h>
-
 void input_two_strings(char *string1, char *string2);
 int stringcompare(char *string1, char *string2);
 void output(char *string1, char *string2, int result);
@@ -42,28 +41,24 @@ int main() {
 
 void input_two_strings(char *string1, char *string2) {
     printf("Enter the first string: ");
-    gets(string1);
+    scanf("%s", string1);
     printf("Enter the second string: ");
-    gets(string2);
+    scanf("%s", string2);
 }
-
+   
 int stringcompare(char *string1, char *string2) {
-    int i = 0;
-    while (string1[i] != '\0' && string2[i] != '\0') {
+    for (int i = 0; string1[i] != '\0' && string2[i] != '\0'; i++) 
         if (string1[i] < string2[i]) {
             return -1;
         } else if (string1[i] > string2[i]) {
             return 1;
         }
-        i++;
-    }
-
-    if (string1[i] == '\0' && string2[i] != '\0') {
+    
+    if (string1[0] == '\0' && string2[0] != '\0') {
         return -1;
-    } else if (string1[i] != '\0' && string2[i] == '\0') {
+    } else if (string1[0] != '\0' && string2[0] == '\0') {
         return 1;
     }
-    return 0;
 }
 
 void output(char *string1, char *string2, int result) {
@@ -74,4 +69,4 @@ void output(char *string1, char *string2, int result) {
     } else {
         printf("Both strings are equal\n");
     }
-}   
+}
