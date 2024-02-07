@@ -21,7 +21,6 @@ void output(int sum);
 ---*/
 
 #include <stdio.h>
-
 int input_array_size();
 void input_array(int n, int a[n]);
 int sum_composite_numbers(int n, int a[n]);
@@ -29,14 +28,11 @@ void output(int sum);
 
 int main() {
     int n, sum;
-
     n = input_array_size();
     int array[n];
-
     input_array(n, array);
     sum = sum_composite_numbers(n, array);
     output(sum);
-
     return 0;
 }
 
