@@ -22,7 +22,6 @@ is used to check if the correct number and type of actual arguments is being pas
 
 what is the effect of #include<stdio.h>?
 
-
 what is main?
 a  starting function.
 
