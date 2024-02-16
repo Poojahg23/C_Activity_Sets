@@ -1,0 +1,48 @@
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02> gcc -O0 -g problem03.c
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401477: file problem04.c, line 30.
+(gdb) r
+Starting program: C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02/a.exe 
+[New Thread 21044.0x4438]
+[New Thread 21044.0x544c]
+
+Breakpoint 1, 0x00401477 in main () at problem04.c:30
+warning: Source file is more recent than executable.
+30      {
+(gdb) n
+32          n = input_array_size();
+(gdb) n
+Enter the size of the array: 5
+33          int array[n];
+(gdb) n
+34          input_array(n, array);
+(gdb) n
+Enter the elements of the array: 1 2 3 4 5
+35          sum = sum_composite_numbers(n, array);
+(gdb) n
+36          output(sum);
+(gdb) n
+Sum of composite numbers in the array: 4
+37          return 0;
+(gdb) n
+38      }
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 21044] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5

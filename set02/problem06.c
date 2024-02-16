@@ -28,7 +28,6 @@ void output(char *a, char *reverse_a);
 
 int main() {
     char str[100], reverse_str[100];
-
     input_string(str);
     str_reverse(str, reverse_str);
     output(str, reverse_str);
@@ -44,7 +43,7 @@ void input_string(char *a) {
 void str_reverse(char *str, char *rev_str) {
     int length = strlen(str);
 
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++){
         rev_str[i] = str[length - 1 - i];
     }
 

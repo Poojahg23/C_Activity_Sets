@@ -1,0 +1,37 @@
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02> gcc -g -O0 problem01.c -o problem01.exe
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file problem01.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02> gdb ./problem01.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02\problem01.exe...done.
+(gdb) break main
+Breakpoint 1 at 0x40146e: file problem01.c, line 31.
+(gdb) run
+Starting program: C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02/./problem01.exe 
+[New Thread 5248.0x3b50]
+[New Thread 5248.0x25cc]
+
+Breakpoint 1, main () at problem01.c:31
+warning: Source file is more recent than executable.
+31          input(&base, &height);
+(gdb) n
+Enter the base of the triangle:
+3
+Enter the height of the triangle:
+4
+32          find_area(base, height, &area);
+(gdb) n
+33          output(base, height, area);
+(gdb) n
+Area of the triangle with base 3.000000 and height 4.000000 is 6.000000
+34          return 0;
+(gdb) q
+A debugging session is active.
