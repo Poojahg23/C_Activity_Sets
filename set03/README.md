@@ -109,7 +109,7 @@ void output(int n, int a[n]);
 2, 3, 7, 11, 13, 19, 23, 29, 31
 ```
 
----
+--- 
 
 6. Write a program to find the index of a substring of a string
 
