@@ -1,0 +1,39 @@
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02> gcc -g -O0 problem07.c  
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem07.c, line 41.
+(gdb) r
+Starting program: C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02/a.exe 
+[New Thread 3324.0x50b8]
+[New Thread 3324.0x3e94]
+
+Breakpoint 1, main () at problem07.c:41
+41          t = input_triangle();
+(gdb) n
+Enter the base of the triangle: 5
+Enter the altitude of the triangle: 7
+42          find_area(&t);
+(gdb) n
+43          output(t);
+(gdb) n
+The area of the triangle with base = 5.000000 and altitude = 7.000000 is 17.500000
+45          return 0;
+(gdb) n
+46      }
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 3324] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
