@@ -156,7 +156,7 @@ void output(Triangle t);
 
 ***Output***
 ```
-The area of triangle wwith base = 2.000000 and altitude = 3.000000 is 3.000000
+The area of triangle with base = 2.000000 and altitude = 3.000000 is 3.000000
 ```
 
 ---

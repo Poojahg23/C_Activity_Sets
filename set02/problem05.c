@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int input();
@@ -7,7 +6,6 @@ void output(int a, int b, int gcd);
 
 int main() {
     int num1, num2, gcd;
-
     num1 = input();
     num2 = input();
     gcd = find_gcd(num1, num2);

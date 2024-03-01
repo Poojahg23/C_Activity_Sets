@@ -25,7 +25,7 @@ The triangle with sides 5, 4 and 5 is not scalene
 
 #include <stdio.h>
 
-int input_side();
+int input_side(); 
 int check_scalene(int a, int b, int c);
 void output(int a, int b, int c, int isscalene);
 

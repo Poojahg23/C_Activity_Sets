@@ -28,7 +28,7 @@ int input_number();
 int is_composite(int n);
 void output(int n, int result);
 
-int main() {
+int main(){
     int n, result;
     n = input_number();
     result = is_composite(n);
@@ -36,7 +36,7 @@ int main() {
     return 0;
 }
 
-int input_number() {
+int input_number(){
     int n;
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -44,7 +44,7 @@ int input_number() {
 }
 
 int is_composite(int n) {
-    for(int i=2;i<sqrt(n);i++)
+    for(int i=2;i*i<=n;i++) 
     if(n%i==0){
         return 1;
     }
