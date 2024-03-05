@@ -82,7 +82,7 @@ Complex add(Complex a, Complex b) {
     return result;
 }
 
-Complex add_n_complex(int n, Complex c[n]) {
+Complex add_n_complex(int n, Complex c[n]){
    Complex result;
    result.real = 0.0;
    result.imaginary = 0.0;
@@ -91,7 +91,7 @@ Complex add_n_complex(int n, Complex c[n]) {
     result = add(result, c[i]);
     return result;
 }
-
+}
 void output(int n, Complex c[n], Complex result) 
 {
     printf("Complex Numbers:\n");

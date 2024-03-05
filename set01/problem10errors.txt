@@ -1,1 +1,45 @@
-bo errors
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01> gcc -g -O0 problem10.c -O  problem10.exe 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem10.exe:cygming-crtbegin.c:(.text+0x2a0): multiple definition of `_mingw32_init_mainargs'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.text+0x2a0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem10.exe:cygming-crtbegin.c:(.text+0x2e0): multiple definition of `mainCRTStartup'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.text+0x2e0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem10.exe:cygming-crtbegin.c:(.text+0x300): multiple definition of `WinMainCRTStartup'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.text+0x300): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem10.exe:cygming-crtbegin.c:(.text+0x320): multiple definition of `atexit'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.text+0x320): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem10.exe:cygming-crtbegin.c:(.text+0x330): multiple definition of `_onexit'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.text+0x330): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem10.exe:cygming-crtbegin.c:(.text+0x340): multiple definition of `__gcc_register_frame'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o:cygming-crtbegin.c:(.text+0x0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem10.exe:cygming-crtbegin.c:(.text+0x430): multiple definition of `__gcc_deregister_frame'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o:cygming-crtbegin.c:(.text+0xf0): first defined here
+problem10.exe: In function `main':
+C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/problem10.c:35: multiple definition of `main'
+C:\Users\MYHP~1\AppData\Local\Temp\ccHLPOWw.o:C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/problem10.c:35: first defined here
+problem10.exe: In function `input_strings':
+C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/problem10.c:44: multiple definition of `input_strings'      
+C:\Users\MYHP~1\AppData\Local\Temp\ccHLPOWw.o:C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/problem10.c:44: first defined here
+problem10.exe: In function `compare_the_strings':
+C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/problem10.c:52: multiple definition of `compare_the_strings'
+C:\Users\MYHP~1\AppData\Local\Temp\ccHLPOWw.o:C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/problem10.c:52: first defined here
+problem10.exe: In function `output':
+C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/problem10.c:58: multiple definition of `output'
+C:\Users\MYHP~1\AppData\Local\Temp\ccHLPOWw.o:C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set01/problem10.c:58: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem10.exe:cygming-crtbegin.c:(.bss+0x4): multiple definition of `_argc'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.bss+0x4): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem10.exe:cygming-crtbegin.c:(.bss+0x0): multiple definition of `_argv'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.bss+0x0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem10.exe:cygming-crtbegin.c:(.eh_frame+0xb8): multiple definition of `__EH_FRAME_BEGIN__'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o:cygming-crtbegin.c:(.eh_frame+0x0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o:cygming-crtbegin.c:(.text+0x92): undefined reference to `_Jv_RegisterClasses'
+collect2.exe: error: ld returned 1 exit status

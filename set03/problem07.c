@@ -46,3 +46,4 @@ void output(Line l) {
     printf("The distance between the points (%f,%f) and (%f,%f) is %0.4f\n",
            l.p1.x, l.p1.y, l.p2.x, l.p2.y, l.distance);
 }
+

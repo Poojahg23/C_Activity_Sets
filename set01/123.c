@@ -24,7 +24,7 @@ void input_strings(char *string1, char *string2)
 int compare_the_strings(char *string1, char *string2)
 {
   int i=0;
-  for (i=0 ; string1[i]!='\0' || string2[i]!= '\0' && string1[i]==string2[i] ; i++); 
+  for (i=0 ; string1[i]!='\0' && string2[i]!= '\0' && string1[i]==string2[i] ; i++); 
     if(string1[i] > string2[i])
     {
       return -1;

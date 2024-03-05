@@ -30,7 +30,7 @@ void add(int a, int b, int *sum);
 void output(int a, int b, int sum);
 
 int main(){
-    int a, b,sum;
+    int a,b,sum;
     input(&a,&b);
     add(a,b,&sum);
     output(a,b,sum);

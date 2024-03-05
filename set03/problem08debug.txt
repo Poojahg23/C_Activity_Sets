@@ -1,0 +1,88 @@
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02> gcc -g -O0 problem08.c 
+PS C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401479: file problem08.c, line 43.
+(gdb) r
+Starting program: C:\Users\My HP\OneDrive\Desktop\C Cloned Rep\C_Activity_Sets\set02/a.exe 
+[New Thread 8040.0x576c]
+[New Thread 8040.0x4f08]
+
+Breakpoint 1, 0x00401479 in main () at problem08.c:43
+43      int main() {
+(gdb) n 
+46          n = input_n();
+(gdb) s
+input_n () at problem08.c:57
+57          printf("Enter the number of triangles: ");
+(gdb) n
+Enter the number of triangles: 58           scanf("%d", &n);
+(gdb) n
+2
+59          return n;
+(gdb) n
+60      }
+(gdb) n
+main () at problem08.c:47
+47          Triangle triangles[n];
+(gdb) n
+48          input_n_triangles(n, triangles);
+(gdb) s
+input_n_triangles (n=2, t=0x61feb4) at problem08.c:72
+72          for (int i = 0; i < n; i++) {
+(gdb) n
+73              printf("Enter the details for triangle %d:\n", i + 1);
+(gdb) n
+Enter the details for triangle 1:
+74              t[i] = input_triangle();
+(gdb) n
+Enter the base of the triangle: 4
+Enter the altitude of the triangle: 5
+72          for (int i = 0; i < n; i++) {
+(gdb) n
+73              printf("Enter the details for triangle %d:\n", i + 1);
+(gdb) n
+Enter the details for triangle 2:
+74              t[i] = input_triangle();
+(gdb) s
+input_triangle () at problem08.c:64
+64          printf("Enter the base of the triangle: ");
+(gdb) n
+Enter the base of the triangle: 65          scanf("%f", &t.base);
+(gdb) n
+4
+66          printf("Enter the altitude of the triangle: ");
+(gdb) 6
+Undefined command: "6".  Try "help".
+(gdb) n
+Enter the altitude of the triangle: 67      scanf("%f", &t.altitude);
+(gdb) n
+6
+68          return t;
+(gdb) n
+69      }
+(gdb) n
+input_n_triangles (n=2, t=0x61feb4) at problem08.c:72
+72          for (int i = 0; i < n; i++) {
+(gdb) n
+76      }
+(gdb) n
+main () at problem08.c:49
+49          find_n_areas(n, triangles);
+(gdb) n
+50          smallest = find_smallest_triangle(n, triangles);
+(gdb)
+51          output(n, triangles, smallest);
+(gdb) n
+The smallest triangle out of triangles with base and height (4.00, 5.00), (4.00, 6.00) is the triangle having base 4.00, height 5.00, and area 10.00
+52          return 0;
+(gdb) n

@@ -1,0 +1,17 @@
+string is an array of characters terminated by \0.
+# how to compute two strings
+starts with for loop
+compare  ith  character in x with ith character in y
+if  and else statement (dont return 0)
+else i++
+&& prevents going beyond 0(&&x[i]!='\0'&&y[i])
+
+start loop with i=0
+stop loop when a[i]=='\0'
+
+{
+    int count=0;
+    for(int i=0;a[i]!='\0';i++)
+    if(a[i]=='a')
+    count++;
+}

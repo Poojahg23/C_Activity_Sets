@@ -59,3 +59,6 @@ void output(float n, float sqrroot)
 {
     printf("The square root of %.0f is %.0f.", n,sqrroot);
 }
+
+
+//fabs prevents premature loop termination, enhancing the reliability and robustness of the convergence criterion.

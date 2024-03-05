@@ -5,14 +5,12 @@ void inputString(char* str, char* sub);
 int findSubStrIndex(char* mainStr, char* subStr);
 void displayResult(char *mainStr, char *subStr, int index);
 
-int main() {
+int main(){
     char mainString[100], subString[50];
     int index;
-
     inputString(mainString, subString);
     index = findSubStrIndex(mainString, subString);
     displayResult(mainString, subString, index);
-
     return 0;
 }
 void inputString(char* a, char* b) {
@@ -37,7 +35,7 @@ int findSubStrIndex(char* mainStr, char* subStr) {
             return i;
         }
     }
-    return -1; // Substring not found
+    return -1;
 }
 
 void displayResult(char *mainStr, char *subStr, int index) {
